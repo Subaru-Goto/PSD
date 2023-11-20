@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  color: red;
+}
+
+#hero-section{
+  color: blue;
+}
+
+#our_story-section{
+  color: green;
+}
+
+#watch-section{
+  color: darkred;
+}
+
+#expertise-section{
+  color: fuchsia;
+}
+
+#team-section{
+  color: yellowgreen;
+}
