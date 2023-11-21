@@ -1,3 +1,8 @@
+/* === Set main color variables === */
+:root {
+  --blue: #1ec5cf;
+}
+
 /* === General === */
 
 *{
@@ -14,6 +19,10 @@ a{
   text-decoration: none;
 }
 
+.container{
+  margin: 0 auto;
+  width: 80vw;
+}
 /* === Header === */
 
 header{
@@ -30,30 +39,35 @@ nav{
 }
 .nav__left{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 30%;
-  gap: 10px;
+  gap: .625em; /* 10px */
+}
+
+.nav__left > p{
+  color: var(--blue);
 }
 
 .nav__right {
   display: flex;
   justify-content: space-between;
-  width: 60%;
-  margin-right: 3em;
-}
-
-.nav__left>p{
-  color: #1ec5cf;
+  gap: 1em;
 }
 
 .nav__right > li >a{
-  text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   font-size: .8rem;
+  cursor: pointer;
 }
+
+.nav__right > li >a:hover{
+  color: var(--blue);
+  font-size: 1rem;
+  text-shadow: 1px 1px #000;
+}
+
 /* ==== Hero ====*/
 
 #hero-section{
@@ -61,18 +75,13 @@ nav{
   margin-top: 2em;
 } 
 
-.container{
-  margin: 0 auto;
-  width: 80%;
-}
-
 .flex-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 20px;
+  gap: 1.25em;
 }
 
 .flex-container > h1{
@@ -83,7 +92,7 @@ nav{
 }
 
 #hero__line{
-  border-color: #1ec5cf;
+  border-color: var(--blue);
   width: 7%;
 }
 
@@ -95,9 +104,15 @@ nav{
 .learn-more{
   margin-top: 1em;
   text-transform: uppercase;
-  border: 1px solid #1ec5cf;
+  border: 1px solid var(--blue);
   padding: .5em;
-  color: #1ec5cf;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.learn-more:focus{
+  outline: none;
+  transform: scale(1.05);
 }
 
 
