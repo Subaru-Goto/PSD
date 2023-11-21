@@ -1,19 +1,124 @@
+/* === General === */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav{
-  color: red;
+li{
+  list-style: none;
 }
 
-#hero-section{
-  color: blue;
+a{
+  text-decoration: none;
 }
+
+/* === Header === */
+
+header{
+  background-image: url('./images/bgk-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ==== Nav bar ====*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  gap: 10px;
+}
+
+.nav__right {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-right: 3em;
+}
+
+.nav__left>p{
+  color: #1ec5cf;
+}
+
+.nav__right > li >a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .8rem;
+}
+/* ==== Hero ====*/
+
+#hero-section{
+  height: 40vh;
+  margin-top: 2em;
+} 
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.flex-container > h1{
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#hero__line{
+  border-color: #1ec5cf;
+  width: 7%;
+}
+
+.flex-container > p{
+  color: #fff;
+  margin: 0 auto;
+}
+
+.learn-more{
+  margin-top: 1em;
+  text-transform: uppercase;
+  border: 1px solid #1ec5cf;
+  padding: .5em;
+  color: #1ec5cf;
+}
+
+/* ==== our story section ====*/
+
 
 #our_story-section{
   color: green;
+  align-self: start;
+}
+
+.wrap-ourstory {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap-ourstory p {
+  max-width: 40rem;
+  min-width: 25rem;
 }
 
 #watch-section{
@@ -26,4 +131,22 @@ nav{
 
 #team-section{
   color: yellowgreen;
+}
+
+/* Code for "Our Story" */
+
+
+#logo-big {
+  /*   justify-content: flex-start;
+    align-items: center;
+    height: 5vh%; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: whitesmoke; */
+    margin-top: 10px;
+} 
+
+.expertise-section {
+    background-color: whitesmoke;
 }
