@@ -23,6 +23,15 @@ a{
   margin: 0 auto;
   width: 80vw;
 }
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1.25em;
+}
 /* === Header === */
 
 header{
@@ -75,16 +84,7 @@ nav{
   margin-top: 2em;
 } 
 
-.flex-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 1.25em;
-}
-
-.flex-container > h1{
+#hero-section h1{
   color: #fff;
   font-size: 2rem;
   text-transform: capitalize;
@@ -96,7 +96,7 @@ nav{
   width: 7%;
 }
 
-.flex-container > p{
+#hero-section p{
   color: #fff;
   margin: 0 auto;
 }
@@ -113,35 +113,6 @@ nav{
 .learn-more:focus{
   outline: none;
   transform: scale(1.05);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-#our_story-section{
-  color: green;
-  align-self: start;
-}
-
-#watch-section{
-  color: darkred;
-}
-
-#expertise-section{
-  color: fuchsia;
-}
-
-#team-section{
-  color: yellowgreen;
 }
 
 /* Code for "Our Story" */
@@ -164,6 +135,25 @@ nav{
     margin-top: 10px;
 } 
 
-.expertise-section {
-    background-color: whitesmoke;
+/* ==== Watch section ====*/
+
+#watch-section{
+  background-image: url('./images/bgk-middle.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  text-align: center;
+  height: 40vh;
+}
+
+.fa-circle-play{
+  font-size: 5rem;
+  color: #fff;
+  margin: 0 auto;
+}
+
+#watch-section p{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1em;
 }
