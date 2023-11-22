@@ -115,14 +115,58 @@ nav{
   transform: scale(1.05);
 }
 
+<<<<<<< HEAD
+/* ==== our story section ====*/
+
+
+#our_story-section{
+  color: green;
+  align-self: start;
+  flex-wrap: wrap;
+}
+
+.ourstory_conainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ourstory_container_child {
+  width: 60%;
+}
+
+.ourstory_conainer p {
+  max-width: 30rem;
+  min-width: 25rem;
+}
+
+#logo_ourstory {
+  width: 30%;
+}
+
+#logo_ourstory img {
+  width: 8rem;
+}
+
+#watch-section{
+  color: darkred;
+}
+
+#expertise-section{
+  color: fuchsia;
+}
+
+#team-section{
+  color: yellowgreen;
+}
+
+=======
+>>>>>>> 8544f30adf45b543b9498bf971fad5fbd24a6dd6
 /* Code for "Our Story" */
 
-.wrap-ourstory {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
 #logo-big {
   /*   justify-content: flex-start;
