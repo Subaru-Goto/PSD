@@ -11,6 +11,12 @@
   box-sizing: border-box;
 }
 
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 0.5em;
+}
+
 li{
   list-style: none;
 }
@@ -108,6 +114,7 @@ nav{
   padding: .5em;
   color: var(--blue);
   cursor: pointer;
+  background-color: transparent;
 }
 
 .learn-more:focus{
@@ -116,10 +123,28 @@ nav{
 }
 
 /* ==== our story section ====*/
+@media screen and (max-width: 768px) {
+  .ourstory_conainer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .ourstory_container_child {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .ourstory_container_child p {
+    max-width: 100%;
+    min-width: auto;
+    
+  }
+}
 
 
 #our_story-section {
-  color: green;
+  color: black;
   height: 30vh;
   
 }
@@ -138,12 +163,16 @@ nav{
 .ourstory_container_child {
   width: 56%;
   border: 2px solid violet;
+  overflow: auto;
+  
 }
 
- .ourstory_conainer p {
+ .ourstory_container_child p {
   max-width: 30rem;
   min-width: 25rem;
 } 
+
+
 
 #logo_big {
   border: 2px solid green;
@@ -167,9 +196,6 @@ nav{
 }
 
 
-/* Code for "Our Story" */
- 
-
 /* ==== Watch section ====*/
 
 #watch-section{
@@ -192,3 +218,35 @@ nav{
   font-weight: bold;
   margin-top: 1em;
 }
+
+/* ==== Experitise section ====*/
+
+.expertise-container {
+  border: tomato solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expertise-grid ul {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, 1fr);
+  border: solid 2px fuchsia;
+}
+
+.expertise-grid li {
+  position: relative;
+}
+
+.expertise-grid li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
