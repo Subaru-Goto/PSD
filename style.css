@@ -115,14 +115,13 @@ nav{
   transform: scale(1.05);
 }
 
-<<<<<<< HEAD
 /* ==== our story section ====*/
 
 
-#our_story-section{
+#our_story-section {
   color: green;
-  align-self: start;
-  flex-wrap: wrap;
+  height: 30vh;
+  
 }
 
 .ourstory_conainer {
@@ -130,21 +129,25 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: flex-end;
+    border: 2px solid tomato;
+    gap: 10px;
+    height: 100%;
 }
 
 .ourstory_container_child {
-  width: 60%;
+  width: 56%;
+  border: 2px solid violet;
 }
 
-.ourstory_conainer p {
+ .ourstory_conainer p {
   max-width: 30rem;
   min-width: 25rem;
-}
+} 
 
-#logo_ourstory {
-  width: 30%;
+#logo_big {
+  border: 2px solid green;
+  display: block;
 }
 
 #logo_ourstory img {
@@ -163,21 +166,9 @@ nav{
   color: yellowgreen;
 }
 
-=======
->>>>>>> 8544f30adf45b543b9498bf971fad5fbd24a6dd6
+
 /* Code for "Our Story" */
-
-
-#logo-big {
-  /*   justify-content: flex-start;
-    align-items: center;
-    height: 5vh%; 
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: whitesmoke; */
-    margin-top: 10px;
-} 
+ 
 
 /* ==== Watch section ====*/
 
