@@ -154,25 +154,9 @@ nav{
   width: 8rem;
 }
 
-#watch-section{
-  color: darkred;
-}
-
-#expertise-section{
-  color: fuchsia;
-}
-
-#team-section{
-  color: yellowgreen;
-}
-
-
-/* Code for "Our Story" */
- 
-
 /* ==== Watch section ====*/
 
-#watch-section{
+#watch-section, #team-section{
   background-image: url('./images/bgk-middle.png');
   background-repeat: no-repeat;
   background-size: cover;  
@@ -191,4 +175,46 @@ nav{
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+/* === Team Section === */
+.team__header{
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.team__header h2{
+  text-transform: uppercase;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card__item{
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  justify-content: center;
+}
+
+.card__img{
+  border: 1px solid #000000;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.card__child {
+  color: #fff;
 }
