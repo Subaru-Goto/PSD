@@ -15,6 +15,7 @@ h2 {
   display: flex;
   justify-content: flex-start;
   padding-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 li{
@@ -215,8 +216,6 @@ nav{
 
 /* ==== Experitise section ====*/
 
-
-
 .expertise-container {
   border: tomato solid 2px;
   display: flex;
@@ -227,26 +226,34 @@ nav{
 
 .expertise-grid {
   max-width: 80%;
+  /* padding: 2em; */
+}
+
+.expertise-grid h4{
+  text-transform: uppercase;
 }
 
 .expertise-grid ul {
   display: grid;
   grid-template: repeat(2, auto) / repeat(3, 1fr);
-  border: solid 2px fuchsia;
+  
 }
 
-.expertise-grid li {
+.expertise-grid ul li {
   position: relative;
 }
 
-.expertise-grid li::before {
+.expertise-grid ul li img {
+  padding: 1em;
+}
+.expertise-grid ul li::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid blue;
+  border: 0.5px solid lightgrey;
   box-sizing: border-box;
   z-index: -1;
 }
@@ -256,15 +263,13 @@ nav{
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.expertise-grid ul li img {
-  margin-bottom: 10px;
+  padding: 2em;
 }
 
 .expertise-grid ul li h4 {
   margin-bottom: 5px;
 }
+
 /* === Team Section === */
 
 #team-section{
