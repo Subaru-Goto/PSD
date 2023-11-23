@@ -221,11 +221,18 @@ nav{
 
 /* ==== Experitise section ====*/
 
+
+
 .expertise-container {
   border: tomato solid 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5em;
+}
+
+.expertise-grid {
+  max-width: 80%;
 }
 
 .expertise-grid ul {
@@ -250,3 +257,17 @@ nav{
   z-index: -1;
 }
 
+.expertise-grid ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.expertise-grid ul li img {
+  margin-bottom: 10px;
+}
+
+.expertise-grid ul li h4 {
+  margin-bottom: 5px;
+}
