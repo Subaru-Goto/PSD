@@ -5,13 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <title>Document</title>
   </head>
   <body>
@@ -50,29 +43,34 @@
       </section>
     </header>
     <main>
-      
       <section id="our_story-section">
         <div class="ourstory_conainer container">
-          
           <div id="logo_ourstory" href="images/png/logo-big.png">
             <a id="logo-big"
               ><img src="images/png/logo-big.png" href="logo" />
             </a>
           </div>
-            
+
           <div class="ourstory_container_child">
-           <h2>our story</h2>
-            <p>This is a Photoshop version of Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p> Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a. Illo ab vel doloribus voluptatibus enim.</p>
+            <h2>our story</h2>
+            <p>
+              This is a Photoshop version of Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+            </p>
+            <p>
+              Omnis illum perferendis cum recusandae provident labore, accusamus
+              et nostrum, sint sapiente minus iste, quos a. Illo ab vel
+              doloribus voluptatibus enim.
+            </p>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a.</p> -->
             <button class="learn-more" href="#">Learn more</button>
           </div>
-          
-         </div>
+        </div>
       </section>
-    
+
       <section id="watch-section">
         <div class="container flex-container">
-          <i class="fa-regular fa-circle-play"></i>
+          <img class="play-icon" src="images/svg/play.svg" alt="click here to play a video"/>
           <p>watch our story</p>
         </div>
       </section>
@@ -121,9 +119,8 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <hr id="team__line" />
           </div>
-          
-          <div class="card">
 
+          <div class="card">
             <div class="card__child">
               <div class="card__img"></div>
               <h5>semf ucuk</h5>
@@ -161,6 +158,88 @@
       </section>
       <section id="contact_client-section">contact / client section</section>
     </main>
-    <footer>footer</footer>
+
+    <footer id="footer">
+
+      <div class="container">
+        <div class="footer__card">
+
+          <div class="footer__company">
+
+            <div class="company-logo">
+              <img src="./images/svg/logo.svg" alt="company-logo" />
+              <p class="company-header">tajam</p>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              impedit cumque minus ipsum maiores ad commodi sequi, amet dolore
+            </p>
+
+          </div>
+
+          <div class="footer__location">
+
+            <p class="location-header">our studio</p>
+            
+            <div>
+              <div class="location-icon">
+                <img src="images/svg/big104.svg" als="location icon"/>
+                <p>Ruko cucruk, JI. Radio luar dalem jos No.12-13, kalideres - Jakarta Barat 11480-indonesia</p>
+              </div>
+
+              <div class="tel-icon">
+                <img  src="images/svg/phone351.svg" alt="telephone icon"/>
+                <p>(+62) 21-2224-3333</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="footer__contact">
+
+            <p class="contact-header">stay in touch</p>
+              <div>
+                <form class="news-letter-form">
+                  <input
+                    required
+                    class="email-input"
+                    aria-label="email-input for newletter"
+                    type="text"
+                    placeholder="Subscribe our newslatter"/>
+                  <button type="button">
+                    <img
+                     class="send-icon"
+                     src="images/svg/paper122.svg"
+                     alt="click here to send"/>
+                  </button>
+                </form>
+
+                <div class="social-media">
+                  <img src="images/svg/facebook.svg" href="facebook" />
+                  <img src="images/svg/twitter.svg" href="twitter" />
+                  <img src="images/svg/dribbble.svg" href="dribbble" />
+                  <img src="images/svg/instagram.svg" href="instagram" />
+                  <img src="images/svg/gplus.svg" href="googlePlus" />
+                  <img src="images/svg/youtube.svg" href="youtube" />
+                </div>
+              </div>
+          </div>
+
+          <span class="footer__description">
+            <p>help</p>
+            <p>terms & condition</p>
+            <p>privacy</p>
+          </span>
+
+          <span class="footer__copyright">
+            <p>Copyright © 2015 - Tajem Creative</p>
+          </span>
+
+        </div>
+      </div>
+
+    </footer>
+
   </body>
 </html>
