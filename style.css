@@ -101,7 +101,10 @@ nav{
   margin: 0 auto;
 }
 
-.learn-more{
+.learn-more,
+.hiring-btn{
+  font-size: .6875rem; /* 11px */
+  font-weight: bold;
   margin-top: 1em;
   text-transform: uppercase;
   border: 1px solid var(--blue);
@@ -110,7 +113,8 @@ nav{
   cursor: pointer;
 }
 
-.learn-more:focus{
+.learn-more:focus,
+.hiring-btn:focus{
   outline: none;
   transform: scale(1.05);
 }
@@ -154,29 +158,16 @@ nav{
   width: 8rem;
 }
 
-#watch-section{
-  color: darkred;
-}
-
-#expertise-section{
-  color: fuchsia;
-}
-
-#team-section{
-  color: yellowgreen;
-}
-
-
-/* Code for "Our Story" */
- 
-
 /* ==== Watch section ====*/
 
-#watch-section{
+#watch-section, #team-section{
   background-image: url('./images/bgk-middle.png');
   background-repeat: no-repeat;
   background-size: cover;  
   text-align: center;
+}
+
+#watch-section{
   height: 40vh;
 }
 
@@ -191,4 +182,84 @@ nav{
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+/* === Team Section === */
+
+#team-section{
+  height: 50vh;
+}
+
+.team__header{
+  padding: 3rem 0;
+  color: #fff;
+}
+
+.team__header h2{
+  text-transform: uppercase;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+#team__line{
+  width: 7%;
+  border-color: grey;
+  margin: .5em auto 0 auto;
+}
+
+.card__item{
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  row-gap: 1rem;
+}
+
+.card__img{
+  height: 8rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.card__child {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.card__child h5,
+.card__child p{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card__child h5{
+  margin-top: 1em;
+}
+
+.card__child p{
+  font-size: .3em;
+  margin-bottom: 2em;
+  color: grey;
+}
+
+
+.team__hiring-text{
+  color: #fff;
+  margin-top: 2em;
+}
+
+.hiring-btn{
+  margin-top: 1em;
+  display: inline-block;
 }
