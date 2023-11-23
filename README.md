@@ -4,8 +4,6 @@
 
 TBD
 
-![alt image of web](.images/design.png)
-
 ### Links
 
 - Live Site URL: 
