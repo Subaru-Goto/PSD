@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+.body{
+  border: 5px solid yellow;
+}
+
 h2 {
   display: flex;
   justify-content: flex-start;
@@ -29,6 +33,7 @@ a{
 .container{
   margin: 0 auto;
   width: 80vw;
+  padding: 3.125rem 0 3.125rem 0;
 }
 
 .flex-container{
@@ -36,8 +41,8 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
   gap: 1.25em;
+  height: 100%;
 }
 /* === Header === */
 
@@ -45,6 +50,7 @@ header{
   background-image: url('./images/bgk-header.png');
   background-repeat: no-repeat;
   background-size: cover;
+  max-height: 800px;
 }
 
 /* ==== Nav bar ====*/
@@ -52,6 +58,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1em;
 }
 
 .nav__left,
@@ -68,9 +75,23 @@ nav{
 }
 
 .nav__right {
-  display: flex;
-  justify-content: space-between;
+  display: none;
+  flex-direction: column;
   gap: 1em;
+  align-items: flex-end;
+  font-size: .7rem;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.close-btn{
+  font-size: 1rem;
+  color: tomato;
 }
 
 .nav__right > li >a{
@@ -83,14 +104,13 @@ nav{
 
 .nav__right > li >a:hover{
   color: var(--blue);
-  font-size: 1rem;
   text-shadow: 1px 1px #000;
 }
 
 /* ==== Hero ====*/
 
 #hero-section{
-  height: 40vh;
+  max-height: 500px;
   margin-top: 2em;
 } 
 
@@ -109,6 +129,7 @@ nav{
 #hero-section p{
   color: #fff;
   margin: 0 auto;
+  max-width: 800px;
 }
 
 .learn-more,
@@ -163,7 +184,10 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+<<<<<<< HEAD
     /* border: 2px solid tomato; */
+=======
+>>>>>>> main
     gap: 10px;
     height: 100%;
 }
@@ -200,7 +224,7 @@ nav{
 }
 
 #watch-section{
-  height: 40vh;
+  height: 500px;
 }
 
 .play-icon{
@@ -291,10 +315,13 @@ nav{
   border-right-style: solid;
   border-color: lightgrey;
 }
+<<<<<<< HEAD
 /* .expertise-grid ul li:nth-child(6) {
   border-bottom-style: solid;
   border-color: lightgrey; 
 } */
+=======
+>>>>>>> main
 
 .expertise-grid ul li h4 {
   margin-bottom: 5px;
@@ -303,7 +330,7 @@ nav{
 /* === Team Section === */
 
 #team-section{
-  height: 31.25rem; /* 500px */
+  height: 50rem; /* 800px */
 }
 
 .team__header{
@@ -318,7 +345,7 @@ nav{
 
 .card{
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 150px));
+  grid-template-columns: repeat(2, minmax(100px, 150px));
   gap: 2rem;
   justify-content: center;
 }
@@ -331,7 +358,7 @@ nav{
 
 .card__item{
   display: grid;
-  grid-template-rows: subgrid;
+  grid-template-columns: subgrid;
   grid-row: span 3;
   row-gap: 1rem;
 }
@@ -409,7 +436,11 @@ nav{
 
 .logo-container {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(2, minmax(10px, 1fr)); /* Columnas automáticas con un ancho mínimo de 150px */
+=======
+  grid-template-columns: repeat (2 / 1fr);
+>>>>>>> main
   gap: 10px;
   justify-content: center;
 }
@@ -428,9 +459,9 @@ nav{
   height: 150px; 
   resize: none; 
   padding: 10px; 
-  border: 1px solid #ccc;   
+  border: 1px solid #ccc;}   
 
-/* ==== Footer ====*/
+/* ==== Footer ==== */
 
 #footer {
   background-image: url('./images/bgk-footer.png');
@@ -446,9 +477,14 @@ nav{
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
   ". . ." /* Giving some spaces */
-  "card1 card2 card3"
-  "card1 card2 card3"
-  "card4 . card5"
+  ". card_company ."
+  ". card_company ."
+  ". card_location ."
+  ". card_location ."
+  ". card_contact ."
+  ". card_contact ."
+  ". card_help ."
+  ". card_copyright."
   ". . ."/* Giving some spaces */;
   gap: 1.5rem;
 }
@@ -462,9 +498,12 @@ nav{
   grid-row: span 2;
 }
 
-.footer__company{grid-area: card1;}
+.footer__company{grid-area: card_company;}
+.company-logo{
+  justify-content: center;
+ }
 
-.footer__location{grid-area: card2;}
+.footer__location{grid-area: card_location;}
 
 .location-header,
 .contact-header{margin: auto auto;}
@@ -489,11 +528,11 @@ nav{
 
 .social-media{
   display: flex;
+  justify-content: center;
   gap: .1em;
-
 }
 
-.footer__contact{grid-area: card3;}
+.footer__contact{grid-area: card_contact;}
 
 .news-letter-form{
   display: flex;
@@ -536,16 +575,55 @@ nav{
 }
 
 .footer__description{
-  grid-area: card4;
-  justify-content: space-between;
+  grid-area: card_help;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1em;
 }
 
 .footer__copyright{
-  grid-area: card5;
+  grid-area: card_copyright;
   align-items: center;
-}
+  justify-content: center;
 }
 
+/** == MEDIA QUERY == **/
+
+@media (min-width: 768px) {
+  .nav__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .hamburger {
+    display: none;
+  } 
+  .close-btn{
+    display: none;
+  }
+  
+  #team-section{
+    height: 37.5rem; /* 600px */
+  }  
+  .card{
+    grid-template-columns: repeat(4, minmax(100px, 150px));
+  }
+
+  .footer__card{
+    grid-template-areas: 
+    ". . ." /* Giving some spaces */
+    "card_company card_location card_contact"
+    "card_company card_location card_contact"
+    "card_help . card_copyright"
+    ". . ."/* Giving some spaces */;
+  }
+  .company-logo{
+    justify-content: flex-start;
+   }
+
+}
 
 @media only screen and (max-width: 768px) {
   .expertise-grid ul {

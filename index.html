@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>tajam</title>
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <header>
@@ -15,18 +16,23 @@
             <img src="./images/svg/logo.svg" alt="company-logo" />
             <p>tajam</p>
           </div>
+          <!-- For mobile users  -->
+          <div class="hamburger">☰</div>
+
           <ul class="nav__right">
+            <li class="close-btn">X</li>
             <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">expertise</a></li>
-            <li><a href="#">teams</a></li>
-            <li><a href="#">works</a></li>
-            <li><a href="#">people say</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#our_story-section">about</a></li>
+            <li><a href="#expertise">expertise</a></li>
+            <li><a href="#team-section">teams</a></li>
+            <li><a href="#contact">works</a></li>
+            <li><a href="#contact">people say</a></li>
+            <li><a href="#footer">contact</a></li>
           </ul>
         </nav>
       </div>
       <section id="hero-section">
+
         <div class="container">
           <div class="flex-container">
             <h1>we are awsome creative agency</h1>
@@ -41,7 +47,9 @@
           </div>
         </div>
       </section>
+
     </header>
+
     <main>
       <section id="our_story-section">
         <div class="ourstory_conainer container">
@@ -184,6 +192,7 @@
           </div>
         </section>
     </main>
+
     <footer id="footer">
 
       <div class="container">
@@ -228,6 +237,7 @@
                 <form class="news-letter-form">
                   <input
                     required
+                    name="email-input"
                     class="email-input"
                     aria-label="email-input for newletter"
                     type="text"
@@ -262,6 +272,7 @@
           </span>
 
         </div>
+
       </div>
 
     </footer>
