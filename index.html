@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <header>
@@ -15,7 +16,11 @@
             <img src="./images/svg/logo.svg" alt="company-logo" />
             <p>tajam</p>
           </div>
+          <!-- For mobile users  -->
+          <div class="hamburger">☰</div>
+
           <ul class="nav__right">
+            <li class="close-btn">X</li>
             <li><a href="#">home</a></li>
             <li><a href="#">about</a></li>
             <li><a href="#">expertise</a></li>
@@ -27,6 +32,7 @@
         </nav>
       </div>
       <section id="hero-section">
+
         <div class="container">
           <div class="flex-container">
             <h1>we are awsome creative agency</h1>
@@ -41,7 +47,9 @@
           </div>
         </div>
       </section>
+
     </header>
+
     <main>
       <section id="our_story-section">
         <div class="ourstory_conainer container">
@@ -52,16 +60,6 @@
           </div>
 
           <div class="ourstory_container_child">
-<<<<<<< HEAD
-            <h2 class="white-div">our story
-            </h2>
-              <p>This is a Photoshop version of Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p> Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a. Illo ab vel doloribus voluptatibus enim.</p>
-              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a.</p> -->
-              <button class="learn-more" href="#">Learn more</button>
-          </div>
-          
-=======
-
            <h2 class="white-div">our story</h2>
             <p>This is a Photoshop version of Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><p> Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a. Illo ab vel doloribus voluptatibus enim.</p>
         
@@ -69,7 +67,6 @@
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum perferendis cum recusandae provident labore, accusamus et nostrum, sint sapiente minus iste, quos a.</p> -->
             <button class="learn-more" href="#">Learn more</button>
           </div>
->>>>>>> 0ae9e6028fcdb9f01b173dea16d323e7dbf67830
         </div>
       </section>
 
@@ -183,9 +180,6 @@
           </div>
         </section>
     </main>
-<<<<<<< HEAD
-    <footer>footer</footer>
-=======
 
     <footer id="footer">
 
@@ -231,6 +225,7 @@
                 <form class="news-letter-form">
                   <input
                     required
+                    name="email-input"
                     class="email-input"
                     aria-label="email-input for newletter"
                     type="text"
@@ -265,11 +260,10 @@
           </span>
 
         </div>
+
       </div>
 
     </footer>
 
-
->>>>>>> 0ae9e6028fcdb9f01b173dea16d323e7dbf67830
   </body>
 </html>
