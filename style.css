@@ -104,7 +104,6 @@ nav{
 
 .nav__right > li >a:hover{
   color: var(--blue);
-  font-size: 1rem;
   text-shadow: 1px 1px #000;
 }
 
