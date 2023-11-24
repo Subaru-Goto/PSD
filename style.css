@@ -398,9 +398,9 @@ nav{
   height: 150px; 
   resize: none; 
   padding: 10px; 
-  border: 1px solid #ccc;   
+  border: 1px solid #ccc;}   
 
-/* ==== Footer ====*/
+/* ==== Footer ==== */
 
 #footer {
   background-image: url('./images/bgk-footer.png');
