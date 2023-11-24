@@ -13,13 +13,13 @@ class Hamburger{
     });
   };
   _displayNav(event) {
-    if (event.target.closest(".hamburger")) {
+    if (event.target.className === "hamburger") {
       this.$navRight.style.display = "flex";
       this.$hamburger.style.display = "none";
     }
   }
   _closeNav(event) {
-    if (event.target.closest(".close-btn")) {
+    if (event.target.className === "close-btn") {
       this.$navRight.style.display = "none";
       this.$hamburger.style.display = "block";
     }
