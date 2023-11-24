@@ -184,15 +184,18 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+<<<<<<< HEAD
+    /* border: 2px solid tomato; */
+=======
+>>>>>>> main
     gap: 10px;
     height: 100%;
 }
 
 .ourstory_container_child {
   width: 56%;
-  border: 2px solid violet;
+  /* border: 2px solid violet; */
   overflow: auto;
-  
 }
 
  .ourstory_container_child p {
@@ -312,6 +315,13 @@ nav{
   border-right-style: solid;
   border-color: lightgrey;
 }
+<<<<<<< HEAD
+/* .expertise-grid ul li:nth-child(6) {
+  border-bottom-style: solid;
+  border-color: lightgrey; 
+} */
+=======
+>>>>>>> main
 
 .expertise-grid ul li h4 {
   margin-bottom: 5px;
@@ -400,7 +410,7 @@ nav{
   display: inline-flex;
   width: 90%;
   justify-content: space-around;
-  border: 2px solid darkgoldenrod;
+  /* border: 2px solid darkgoldenrod; */
   
 }
 
@@ -409,29 +419,39 @@ nav{
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 40%;
 }
 
 .client {
   /* padding: 1em; */
-  border: 2px solid violet;
+  /* border: 2px solid violet; */
   text-align: center;
+  width: 50%;
 }
 
-.client h2 {
+/* .client h2 {
   margin-bottom: 10px;
-}
+} */
 
 .logo-container {
   display: grid;
+<<<<<<< HEAD
+  grid-template-columns: repeat(2, minmax(10px, 1fr)); /* Columnas automáticas con un ancho mínimo de 150px */
+=======
   grid-template-columns: repeat (2 / 1fr);
+>>>>>>> main
   gap: 10px;
+  justify-content: center;
 }
 
-.logo-container div img{
-  width: 30px;
-  
+.logo-item {
+  padding: 10px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 #message {
