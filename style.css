@@ -184,17 +184,12 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-<<<<<<< HEAD
-    /* border: 2px solid tomato; */
-=======
->>>>>>> main
     gap: 10px;
     height: 100%;
 }
 
 .ourstory_container_child {
   width: 56%;
-  /* border: 2px solid violet; */
   overflow: auto;
 }
 
@@ -315,13 +310,7 @@ nav{
   border-right-style: solid;
   border-color: lightgrey;
 }
-<<<<<<< HEAD
-/* .expertise-grid ul li:nth-child(6) {
-  border-bottom-style: solid;
-  border-color: lightgrey; 
-} */
-=======
->>>>>>> main
+
 
 .expertise-grid ul li h4 {
   margin-bottom: 5px;
@@ -430,17 +419,11 @@ nav{
   width: 50%;
 }
 
-/* .client h2 {
-  margin-bottom: 10px;
-} */
+
 
 .logo-container {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(2, minmax(10px, 1fr)); /* Columnas automáticas con un ancho mínimo de 150px */
-=======
-  grid-template-columns: repeat (2 / 1fr);
->>>>>>> main
+  grid-template-columns: repeat(2, minmax(10px, 1fr)); 
   gap: 10px;
   justify-content: center;
 }
