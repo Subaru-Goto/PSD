@@ -2,10 +2,9 @@ class Hamburger{
   constructor(){
     this.$hamburger = document.querySelector('.hamburger');
     this.$navRight = document.querySelector('.nav__right');
-    this.$closeBtn = document.querySelector('.close-btn');
     this.addEventListners();
 }
-  // Trigger function
+  // Trigger functions
   addEventListners() {
     document.body.addEventListener("click", event => {
       this._displayNav(event);
