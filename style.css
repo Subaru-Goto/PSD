@@ -50,7 +50,7 @@ header{
   background-image: url('./images/bgk-header.png');
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 600px;
+  max-height: 800px;
 }
 
 /* ==== Nav bar ====*/
@@ -313,10 +313,6 @@ nav{
   border-right-style: solid;
   border-color: lightgrey;
 }
-.expertise-grid ul li:nth-child(6) {
-  /* border-bottom-style: solid;
-  border-color: lightgrey; */
-}
 
 .expertise-grid ul li h4 {
   margin-bottom: 5px;
@@ -430,7 +426,7 @@ nav{
 
 .logo-container {
   display: grid;
-  grid-template-column: repeat (2 / 1fr);
+  grid-template-columns: repeat (2 / 1fr);
   gap: 10px;
 }
 
@@ -609,8 +605,6 @@ nav{
    }
 
 }
-}
-
 
 @media only screen and (max-width: 768px) {
   .expertise-grid ul {
